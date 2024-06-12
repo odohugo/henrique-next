@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'Archivo';
+      src: url(../../Archivo-VariableFont_wdth\,wght.ttf);
+    }
+    * {
+        font-family: 'Archivo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  }
+
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(2%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+.offwhite {
+    background-color: #fafaf9;
+}
+
+.margin-bottom-offset {
+    margin-bottom: -146px;
+}
+
+.popIn {
+    animation: popIn .2s ease-in;
+}
+
+.popOut {
+    animation: popOut .2s ease-in;
+}
+
+.slideIn {
+    animation: slideIn .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
